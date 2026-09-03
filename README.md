@@ -23,15 +23,15 @@ DSA, DSO Control, mime-os, DataTrace, KCC, …).
 
 | L | name | invariant | status |
 |---|---|---|---|
-| L5 | Applications on phases | tick/agent-step/capsule = phase | partial (PC1, netcode next) |
-| L4 | Capsules `.eml/.vcf` | self-contained, verifiable anywhere | design (substrate: mime-os) |
-| L3 | Semantics & control | journal = decisions only, never state | **building (decision journal)** |
+| L5 | Applications on phases | tick/agent-step/capsule = phase | partial (PC1, netcode, ctl_demo) |
+| L4 | Capsules `.eml/.vcf` | self-contained, verifiable anywhere | **core done** (phase-vm `src/cap.rs`) |
+| L3 | Semantics & control | journal = decisions only, never state | **done** (phase-vm `src/ctl.rs`) |
 | L2 | Phase memory (arenas) | peak of phase, not sum | done (`src/alloc.rs`) |
 | L1 | Phase machine | `F⁻¹∘F = Id` inside a phase | done (phase-vm) |
 | L0 | Bijective core | one destination, sources intact | done (phase-vm ISA) |
 
 Three honest axes: **A reversibility** (free rollback O(steps)) ·
-**B meet-in-the-middle** (sqrt-factor where structure allows) ·
+**B meet-in-the-middle** (demo: bidirectional BFS 1.6×) ·
 **C boundary discipline** (memory/communication/failure).
 
 Full spec: **[ARCHITECTURE.md](ARCHITECTURE.md)** — axioms (what is measured
