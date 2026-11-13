@@ -1,4 +1,19 @@
+<div align="center">
+
+<img src="docs/banner.svg" alt="phase-arch banner" width="1000">
+
 # PHASE — reversible phase-state computing
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![impl](https://img.shields.io/badge/impl-phase--vm-blueviolet.svg)](https://github.com/kostyk348/phase-vm)
+[![tests](https://img.shields.io/badge/tests-39%20passing-brightgreen.svg)]()
+[![Release](https://img.shields.io/github/v/release/kostyk348/phase-arch?sort=semver&color=blue)](https://github.com/kostyk348/phase-arch/releases)
+[![Last commit](https://img.shields.io/github/last-commit/kostyk348/phase-arch?branch=main)](https://github.com/kostyk348/phase-arch/commits/main)
+
+</div>
+
+---
+
 
 **A computational paradigm for ordinary machines.** Computation is treated as
 motion of *phase state*: inside a phase every operation is reversible (time
